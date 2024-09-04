@@ -7,18 +7,18 @@ import pandas as pd
 filename = 'train.csv'
 def request1(df):
     nr_cols = df.shape[1]
-    # iau numarul de coloane
+    # numarul de coloane
     print(f'Number of columns: {nr_cols}')
     data_types = df.dtypes
-    # iau numarul de tipuri de date
+    # numarul de tipuri de date
     print('Data types:')
     print (data_types)
     print('\n')
-    # aflu numaru de valori lipsa
+    # numaru de valori lipsa
     missing_values = df.isnull().sum()
     print(f'Missing values: \n{missing_values}')
     nr_rows = df.shape[0]
-    # aflu numarul de linii
+    # numarul de linii
     print(f'Number of rows: {nr_rows}')
     # daca are/nu are duplicatele
     has_duplicates = df.duplicated().sum()
